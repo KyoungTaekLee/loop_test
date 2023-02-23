@@ -16,11 +16,17 @@
     <li>item-4</li>
     <li>item-5</li>
   </ul>
+  <ul>
+  </ul>
   <script>
     let menu = document.getElementById("menu");
+    console.dir(menu);
+    console.log(menu.children[0]);
+    let menu2 = document.getElementsByTagName("ul");
+    console.log(menu2);
     let item = document.getElementsByTagName("li");
-    for (let i = 0; i < menu.item.length; i++) {
-      menu.item[i].style.color = "blue";
+    for (let i = 0; i < item.length; i++) {
+      item[i].style.color = "blue";
     }
   </script>
 </body>
