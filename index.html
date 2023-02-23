@@ -20,13 +20,13 @@
   </ul>
   <script>
     let menu = document.getElementById("menu");
-    console.dir(menu);
-    console.log(menu.children[0]);
-    let menu2 = document.getElementsByTagName("ul");
-    console.log(menu2);
-    let item = document.getElementsByTagName("li");
-    for (let i = 0; i < item.length; i++) {
-      item[i].style.color = "blue";
+    for (let index = 0; index < menu.children.length; index++) {
+      if (index === 2) {
+        menu.children[index].style.color = "blue";
+      }
+      else {
+        menu.children[index].style.background = "gray";
+      }
     }
   </script>
 </body>
